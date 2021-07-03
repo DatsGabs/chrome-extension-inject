@@ -1,0 +1,14 @@
+{
+    "name": "Inject",
+    "version": "0.01",
+    "description": "",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["inject.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "host_permissions": ["<all_urls>"],
+    "manifest_version": 3
+}
