@@ -4,7 +4,7 @@
     "description": "",
     "content_scripts": [
         {
-            "matches": ["*://*.youtube.com/*"],
+            "matches": ["*://*.google.com/*"],
             "js": ["inject.js"],
             "run_at": "document_end"
         }

@@ -1,8 +1,10 @@
 function init() {
-    const el = document.createElement("div")
-    el.innerHTML = "Hello"
+    const el = document.createElement("input")
+    el.setAttribute("type", "checkbox")
     document.body.appendChild(el)
-    console.log("Hola")
+    el.addEventListener("click", (event) => {
+        console.log(event.target.checked)
+    })
 }
 
 init()
